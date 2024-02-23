@@ -24,23 +24,10 @@ pipeline:
                     command: echo hello world
                   timeout: ""
                   type: Run
-              - step:
-                  identifier: dockerbuild
-                  name: docker_build
-                  spec:
-                    image: plugins/docker
-                    settings:
-                      dry_run: "true"
-                      password: <+input>
-                      repo: hello/world
-                      tags: latest
-                      username: <+input>
-                  timeout: ""
-                  type: Plugin
           platform:
+            os: Linux
             arch: Arm64
-            os: MacOS
           runtime:
-            spec: {}
             type: Docker
+            spec: {}
         type: CI
