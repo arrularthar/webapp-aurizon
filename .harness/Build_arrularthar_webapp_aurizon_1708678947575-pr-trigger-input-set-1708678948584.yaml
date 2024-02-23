@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_arrularthar_webapp_aurizon_1708678947575-pr-trigger-input-set
+  identifier: Build_arrularthar_webapp_aurizon_1708678947575prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Harness_Surya
+  pipeline:
+    identifier: Build_arrularthar_webapp_aurizon_1708678947575
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
